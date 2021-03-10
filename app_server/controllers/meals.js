@@ -1,6 +1,7 @@
 /* GET meals view */
 const meals = (req, res) => {
-    res.render('meals', { title: 'Travlr Getaways' });
+    pageTitle = process.env.npm_package_description + ' - Meals';
+    res.render('meals', { title: pageTitle });
 };
 module.exports = {
     meals

@@ -1,9 +1,12 @@
 {
-  "name": "force",
+  "name": "travlr",
   "version": "0.0.0",
   "private": true,
+  "description": "Travlr Getaways",
+  "author":"Devon Darling <devon.darling@snhu.edu>",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "nodemon":"nodemon"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
