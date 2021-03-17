@@ -1,0 +1,19 @@
+[
+    {
+        "type": "First Class Room",
+        "image": "first-class.jpg",
+        "description": "<p>First Class Room</p>",
+        "rate": 220
+    }, {
+        "type": "Deluxe Room",
+        "image": "deluxe.jpg",
+        "description": "<p>Deluxe Room</p>",
+        "rate": 150
+    }, {
+        "type": "Suite Room",
+        "image": "suite.jpg",
+        "description": "<p>Suite Room</p>",
+        "rate": 180
+    }
+
+]
