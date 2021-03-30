@@ -10,5 +10,5 @@ router
 router
     .route('/trips/:tripCode')
     .get(tripsController.tripsFindCode);
-    
+
 module.exports = router;
