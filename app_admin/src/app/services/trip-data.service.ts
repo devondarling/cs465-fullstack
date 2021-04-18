@@ -10,7 +10,8 @@ import { BROWSER_STORAGE } from '../storage';
 export class TripDataService{
 
   constructor(private http: Http, 
-    @Inject(BROWSER_STORAGE) private storage: Storage) {}
+    @Inject(BROWSER_STORAGE) private storage: Storage
+    ) {}
 
   private apiBaseUrl = 'http://localhost:3000/api/';
   private tripUrl = `${this.apiBaseUrl}trips/`;
@@ -58,14 +59,12 @@ export class TripDataService{
   }
 
   public login(user: User): Promise<AuthResponse> {
-    76
     return this.makeAuthApiCall('login', user);
   }
   public register(user: User): Promise<AuthResponse> {
     return this.makeAuthApiCall('register', user);
   }
-  private makeAuthApiCall(urlPath: string, user: User):
-    Promise<AuthResponse> {
+  private makeAuthApiCall(urlPath: string, user: User): Promise<AuthResponse> {
     const url: string = `${this.apiBaseUrl}/${urlPath}`;
     return this.http
       .post(url, user)

@@ -70,7 +70,7 @@ const tripsAddTrip = async (req, res) => {
                         }
                     });
         }
-    );
+    )
 }
 
 const tripsUpdateTrip = async (req, res) => {
@@ -109,7 +109,7 @@ const tripsUpdateTrip = async (req, res) => {
                         .json(err);
                 });
         }
-    );
+    )
 }
 
 const getUser = (req, res, callback) => {

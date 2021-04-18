@@ -6,7 +6,7 @@ const register = (req, res) => {
     if (!req.body.name || !req.body.email || !req.body.password) {
         return res
             .status(400)
-            .json({"message": "All fields required"});
+            .json({ "message": "All fields required" });
     }
 
     const user = new User();
@@ -22,7 +22,7 @@ const register = (req, res) => {
             const token = user.generateJwt();
             res
                 .status(200)
-                .json({token});
+                .json({ token });
         }
     })
 };
@@ -30,7 +30,7 @@ const login = (req, res) => {
     if (!req.body.email || !req.body.password) {
         return res
             .status(400)
-            .json({"message": "All fields required"});
+            .json({ "message": "All fields required" });
     }
     passport.authenticate('local', (err, user, info) => {
         if (err) {
@@ -42,7 +42,7 @@ const login = (req, res) => {
             const token = user.generateJwt();
             res
                 .status(200)
-                .json({token});
+                .json({ token });
         } else {
             res
                 .status(401)
